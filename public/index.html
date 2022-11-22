@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Carga random de productos y chat en vivo</title>
+</head>
+
+<body>
+    <!-- Formulario para probar la carga de productos -->
+    <h1>Mis productos</h1>
+    <!-- Contenedor de productos -->
+    <section>
+        <h2>Listado de productos:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Precio</th>
+                    <th>Miniatura</th>
+                </tr>
+            </thead>
+            <tbody id="products-container"></tbody>
+        </table>
+    </section>
+    <hr>
+    <section>
+        <h2>Chat:</h2>
+        <div id="percent-container"></div>
+        <div class="chat-container">
+            <form id="chat-form" action="#">
+
+                <label for="chatUserName">Ingresá tu email:</label>
+                <input type="email" id="chatUserName" name="chatUserName" placeholder="email@ejemplo.com" required>
+
+                <label for="nameUser">Ingresá tu nombre:</label>
+                <input type="text" id="nameUser" name="nameUser" placeholder="Nombre" required>
+
+                <label for="lastNameUser">Ingresá tu apellido:</label>
+                <input type="text" id="lastNameUser" name="lastNameUser" placeholder="Apellido" required>
+
+                <label for="ageUser">Ingresá tu edad:</label>
+                <input type="number" id="ageUser" name="ageUser" placeholder="Edad" required>
+
+                <label for="aliasUser">Ingresá tu alias:</label>
+                <input type="text" id="aliasUser" name="aliasUser" placeholder="Alias" required>
+
+                <label for="avatarUser">Ingresá tu avatar:</label>
+                <input type="url" id="avatarUser" name="avatarUser" placeholder="Avatar" required>
+
+                <label for="chatMessage">Tu mensaje:</label>
+                <textarea id="chatMessage" rows="10" name="chatMessage" placeholder="Escribí tu mensaje"
+                    required></textarea>
+
+                <input type="submit" class="btn" value="Enviar">
+            </form>
+            <div id="messages"></div>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(90deg, #050727 0%, #000000 100%);
+    color: white;
+}
+
+h1 {
+    text-align: left;
+    margin: 30px 0 30px 60px;
+
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    margin: 30px 0;
+}
+
+hr{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+section{
+    margin: 50px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#product-form label{
+    margin: 15px 0;
+}
+
+#product-form{
+    border: 1px solid white;
+    width: 340px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input[type="color"]{
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+
+/* Estilos para la tabla */
+
+table {
+    margin: 3em auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid white;
+    padding: 15px;
+}
+
+th {
+    background: #ffffff;
+    color: #000000;
+}
+
+tr:nth-child(even) {
+    background: #050727;
+}
+
+tr:nth-child(odd) {
+    background: #000000;
+}
+
+img {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+    text-align: center;
+}
+
+/* Hacer que en hover tenga profundidad */
+
+.btn:hover {
+    box-shadow: 0 0 10px #ffffff;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+/* Chat */
+
+#chat-form{
+    width: 340px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#chat-form label{
+    margin: 10px 0;
+}
+
+.chat__hr{
+    margin: 20px;
+}
+
+.chat-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+input#chatTextMsg{
+    width: 200px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+#messages{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#messages::-webkit-scrollbar {
+    display: none;
+}
+
+.message-container {
+    width: 400px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.message-container__child{
+    display: flex;
+    align-items: center;
+}
+
+.message-container__child img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.message-avatar{
+    border-radius: 50%;
+}
+
+.message-email{
+    text-align: right;
+    font-size: 10px;
+}
+
+.message-user{
+    font-weight: bold;
+    margin: 5px;
+}
+
+.message-text{
+    margin: 5px;
+}
+
+.show-or-hide{
+    display: none;
+}
+
+#percent-container{
+    font-size: 20px;
+    text-align: center;
+    width: 500px;
+    margin: 30px auto;
+}
